@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">찾아드림</string>
+    <!-- TODO: [strings.xml] 나중에 작성 필요할 수 있음 -->
+    <string name="default_notification_channel_id">chatOnlyNotificationID</string>
+</resources>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lostandfind" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LostAndFind" >
+        <activity
+            android:name=".activity.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main.MainUpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main2.Main2UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.chatting.MainChattingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main2.Main2DetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main2.LostPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.DeleteAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.SetupDisturbActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.SetupAlertActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.ModifyPwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.ModifyNickActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.login.FindPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.my.MyPost"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main.MainDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main.MainCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Main.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.login.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.login.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>
